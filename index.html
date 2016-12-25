@@ -6,18 +6,22 @@
 		<!-- Responsive Design -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">	
 
-		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/>
 		<link rel="apple-touch-icon" href="icon.png" />
 		
 		<title>Patrick Yuen's Website</title>
 		
 		<!-- Bootstrap core CSS -->
-		<link href="css/bootstrap.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Logos -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 		<!-- Link the main.css stylesheet -->
 		<link href="css/main.css" rel="stylesheet">
 		
+		<!-- Typewriter effect -->
+		<link href="css/typewriter-effect.css" rel="stylesheet">
 	</head>
 	
 	<body>
@@ -26,10 +30,13 @@
 			<div class="container">
 				<div class="row centered">
 					<div class="col-lg-12">
-						<h1>Patrick Yuen</h1>
-						<h3>Software Engineer | 
-						<a href="mailto:ply209@nyu.edu">Patrick Yuen</a>
-						</h3>
+						<div id="title-cmdline"> 
+						<!-- TODO: Fix Length, stop after 5 seconds -->
+							<div class="typewriter">
+								<h1>Patrick Yuen</h1>
+							</div>
+						</div>
+						<h3> Software Engineer | Cookie Connoisseur </h3>
 					</div>
 				</div>
 			</div>	
@@ -46,18 +53,22 @@
 					
 					<div class="col-lg-6">
 					<p> 
-						I am great.
-						I am better than the scrub-lord Jamie Wu.
-						If you like peanut butter cookies, 
-						you're not going to like me cause I will 
-						consume all of them in sight.
+						Hello World! I'm a software engineer who loves 
+						anything with tech. Whether it's algorithms to 
+						distributed systems, you can find me dabbling 
+						along the cutting edge (or trying not to fail).
+						
+						<blockquote>
+						Deny your emotions and act like you have answers.
+						<br>
+						- Bill Burr</blockquote>
 					</p>
 					</div>
 					
 					<div class="col-lg-3 text-center">
 						<p>
 							<a href="PatrickYuenResume6.0.pdf">
-							<i class="icon-file"></i>
+							<i class="glyphicon glyphicon-file"></i>
 							<t class="text-center">Resume</t> </a>
 						</p>
 					</div>
@@ -66,10 +77,8 @@
 		</div>
 		
 		<!-- Resume -->
-		<!-- TODO Make a picture background that 
-		sticks to top of scroll page with black boxes around content -->
-		<section id="resume" name="resume"></section>
-		
+		<!-- TODO: Box Background, clear background	-->
+
 		<!-- EDUCATION SECTION -->
 		<div class="container desc">
 			<div class="row text-center">
@@ -80,7 +89,7 @@
 					<!-- EDIT: education line 1 -->
 					<div class="col-lg-6">
 						<p><t>Masters of Computer Science</t><br/>
-							New York University
+							New York University <img src="./images/nyu_logo.png" style="height:3em;" />
 						</p>
 					</div>
 					<div class="col-lg-3">
@@ -91,8 +100,8 @@
 		
 					<!-- EDIT: education line 2 -->
 					<div class="col-lg-6 col-lg-offset-3">
-						<p><t>Masters of Computer Science </t><br/>
-							 New York University
+						<p><t>Bachelors of Computer Science </t><br/>
+							 New York University <img src="./images/nyu_logo.png" style="height:3em;" />
 							<!--<br/><i>Extra info here</i>-->
 						</p>
 					</div>
@@ -141,35 +150,55 @@
 			<hr>
 		</div>
 
+		<!-- Awards SECTION -->
+		<div class="container desc">
+			<div class="row">
+					<div class="col-lg-2 col-lg-offset-1">
+						<h5>Awards</h5>
+					</div>
+					
+					<!-- EDIT: awards line 2-->
+					<div class="col-lg-6">
+						<p class="tight"><t>Best Technical Design</t><br/>
+							JP Morgan's Code for Good
+						</p>
+						<p><more>Built a mobile app integrated website to manage photo petitions for a non-profit Rock the Earth</more></p>
+					</div>
+					<div class="col-lg-3">
+						<p><sm>2015</sm></p>
+					</div>
+			</div>
+			<hr>
+		</div>
 
 		<!-- Skills SECTION -->
 		<div class="container desc">
 			<div class="row">
 					<div class="col-lg-2 col-lg-offset-1">
-						<h5>SKILLS</h5>
+						<h5>TECHNICAL SKILLS</h5>
 					</div>
 
 					<!-- EDIT: awards line 1-->
 					<div class="col-lg-6">
-						<p><t>Languages</t><br/>
-							Java, Python<br/>
+						<p><t>Programming Languages</t><br/>
+							Python, Java<br/>
+						</p>
+						<p><t>Web Applications Tech</t><br/>
+							​AngularJS, Django, HTML5/CSS3, ​Javascript, Spring<br/>
+						</p>
+						<p><t>Database Development</t><br/>
+							​​MySQL, Oracle DB<br/>
+						</p>
+						<p><t>Data Analysis</t><br/>
+							Hadoop, Apache Spark, MATLAB, R<br/>
+						</p>
+						<p><t>Other Tools</t><br/>
+							Windows, UNIX/Linux, MS Office, Git, SVN<br/>
 						</p>
 					</div>
-		
-					<!-- EDIT: awards line 2-->
-					<div class="col-lg-6 col-lg-offset-3">
-						<p class="tight"><t>Another award</t><br/>
-							Awards Site
-						</p>
-						<p><more>This award has a description. You won it eating pie. Or probably doing something more job-related. Maybe you won't even keep this section - you'll replace it with Skills or something else!</more></p>
-					</div>
-					<div class="col-lg-3">
-						<p><sm>2013</sm></p>
-					</div>
-			
-			</div><!--/.row -->
+			</div>
 			<br>
-		</div><!--/.container -->
+		</div>
 		
 	</body>
 	
@@ -196,8 +225,12 @@
 					<p><t>More About Me:</t></p>
 					<p>
 						<!-- EDIT: Social Links. Replace # with your URL for each -->
-						<a href="https://www.linkedin.com/in/patrick-yuen-600a0b8a"><i class="icon-linkedin"></i></a>
-						<a href="https://github.com/PatrickYuen"><i class="icon-github"></i></a>
+						<a href="https://www.linkedin.com/in/patrick-yuen-600a0b8a">
+							<i class="fa fa-linkedin-square" style="font-size:48px"></i>
+						</a>
+						<a href="https://github.com/PatrickYuen">
+							<i class="fa fa-github-square" style="font-size:48px"></i>
+						</a>
 					</p>
 				</div>
 			</div>

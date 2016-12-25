@@ -1,0 +1,15 @@
+/* TypeWriter Class: TODO: Pause */
+
+.typewriter h1 { 
+	font: bold 300% Consolas, Monaco, monospace;
+	border-right: .1em solid white;
+	width: 21.5ch;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: 
+	           blink-caret .5s step-end 15 alternate,
+			   typing 7s steps(21, end);
+}
+
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }

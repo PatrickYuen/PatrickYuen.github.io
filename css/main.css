@@ -1,6 +1,6 @@
 body {
   background-color: #f2f2f2;
-  font-family: "Lato"; /* OPTIONAL: Google Fonts - base font */
+  font-family: Ubuntu, sans-serif;
   font-weight: 300;
   font-size: 16px;
   color: #555;
@@ -11,7 +11,6 @@ body {
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway"; /* OPTIONAL: Google Fonts - title font */
   font-weight: 300;
   color: #333;
 }
@@ -36,6 +35,10 @@ a {
   -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
   -o-transition: color 0.1s ease-in, background 0.1s ease-in;
   transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+.transparent{    
+    background-color: rgba(0,0,0,0.15);
 }
 
 a:hover,
@@ -70,7 +73,8 @@ a:after {
 /* Header Wrap */
 .header {
   background: #1CBCAD;
-  background: url(../images/header-bg.jpg) no-repeat center top;
+  background: url(../images/banff-road.jpg) no-repeat center top;
+  background-attachment: fixed;
   padding-top:140px;
   text-align:center;
   background-attachment: relative;
@@ -90,9 +94,13 @@ a:after {
 }
 
 .header h1 {
-  font-size: 80px;
-  color: white;
-  background: rgba(0,0,0,0.2);
+	font-size: 80px;
+	color: white;
+	display:inline-block;
+}
+
+#title-cmdline {
+	background: rgba(0,0,0,0.2);
 }
 
 .header h3 {
@@ -171,7 +179,6 @@ a:after {
 .desc more {
   color: #616669;
 }
-
 
 sm {
   font-size: 12px;
